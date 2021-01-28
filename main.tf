@@ -25,7 +25,7 @@ module "networking" {
   subnet_address_prefixes = var.subnet_address_prefixes
 }
 module "webserver" {
-  source  = "app.terraform.io/YOUR_ORG_NAME/webserver/azurerm"
+  source  = "app.terraform.io/training-hq/webserver/azurerm"
   version = "0.12.0"
 
   name      = var.name
@@ -37,7 +37,7 @@ module "webserver" {
 }
 
 module "appserver" {
-  source  = "app.terraform.io/YOUR_ORG_NAME/appserver/azurerm"
+  source  = "app.terraform.io/training-hq/appserver/azurerm"
   version = "0.12.0"
 
   name      = var.name
@@ -49,7 +49,7 @@ module "appserver" {
 }
 
 module "dataserver" {
-  source  = "app.terraform.io/YOUR_ORG_NAME/dataserver/azurerm"
+  source  = "app.terraform.io/training-hq/dataserver/azurerm"
   version = "0.12.0"
 
   name      = var.name
